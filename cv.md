@@ -21,3 +21,10 @@ My main goal as a software engineer is to build high-quality and efficient softw
 - Electronic catalog "Monobooks"
 - Decoder HEX to DEC
 - CV
+
+---
+
+### Contacts
+- **VK**: [Ilya Sidarenko](https://vk.com/ilyasidarenko)
+- **Email**: ily_asidarenko_pir231@mail.ru
+- **Phone**: +375 29 270 68 09
