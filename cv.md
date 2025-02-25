@@ -1,4 +1,4 @@
-:[image](image.png):
+![image](image.png "Мистер Крабс")
 # Ilya Sidarenko
 ## Student of BRU
 
@@ -7,6 +7,10 @@ My main goal as a software engineer is to build high-quality and efficient softw
 
 ### Skills
 - C++
+- C#
+    - ```
+      public double Div(double n1, double n2) { if (n2 == 0.0D) throw new DivideByZeroException(); return n1 / n2; }
+      ```
 - JavaScript (public static void main(String[] args) { ... })
 - HTML
 - CSS
