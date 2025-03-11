@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html, body {
     height: 10447px;
     width: 1440px;
@@ -6,8 +12,9 @@ html, body {
 
 header {
     background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
     height: 152px;
+    /* border-bottom: 1px solid #e0e0e0; */
+    padding-top: 21px;
 }
 
 .container {
@@ -64,12 +71,13 @@ header {
 
 .first-block{
    position: relative; /* Позволяет позиционировать дочерние элементы относительно этого контейнера */
+   height: 913px;
 }
 
 .first-block .text-overlay{
     position: absolute;
     left: 30px;
-    top: 218px;
+    top: 221px;
 }
 
 
@@ -117,16 +125,15 @@ header {
     transition: background-color 0.3s; /* Плавный переход фона */
 }
 
-.first-block .yellow-button:hover {
-    background-color: gold; /* Цвет фона при наведении */
-}
+/* .first-block .yellow-button:hover {
+    background-color: gold; /* Цвет фона при наведении 
+}*/
 
 .second-block{
     width: 1440px;
     height: 658px;
     display: flex;
     justify-content: center;
-    margin-top: 135px;
 }
 
 .second-block .second-block-first-picture{
@@ -135,6 +142,7 @@ header {
     height: 378px;
     flex-shrink: 0;
     margin-right: 50px;
+    margin-top: 140px;
 }
 
 .second-block-first-picture .second-block-text-overlay{
@@ -171,6 +179,7 @@ header {
     width: 665px;
     height: 378px;
     flex-shrink: 0;
+    margin-top: 140px;
 }
 
 .second-block-second-picture .second-block-text-overlay{
@@ -190,7 +199,7 @@ header {
 }
 
 .second-block-second-picture .second-block-text-overlay h1{
-    margin-top: -2px;
+    margin-top: 0px;
     width: 264px;
     color: #274C5B;
     font-family: Roboto;
@@ -199,4 +208,192 @@ header {
     font-weight: 400;
     line-height: 52px;
     letter-spacing: 0.36px;
+}
+
+.third-block
+{
+    width: 1440px;
+    height: 1006px;
+    background-color: #F9F8F8;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    gap: 30px;
+}
+
+.third_block_image{
+    width: 675px;
+    height: 642px;
+    margin-left: 30px;
+    margin-top: 177px;
+}
+
+.third-block-text-sections .first-subsection{
+    display: grid;
+    margin-top: 130px;
+}
+
+.third-block-text-sections .first-subsection i, .our-products-label i{
+    width: 122px;
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64.8px; /* 180% */
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+}
+
+.base-middle-lable
+{
+    width: 521px;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.5px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+}
+
+.third-block-text-sections .first-subsection h1{
+    margin-top: -1px;
+    margin-bottom: 23px;
+}
+
+.third-block-text-sections .first-subsection h2{
+    width: 670px;
+    color: #525C60;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px; /* 180% */
+    letter-spacing: 0.36px;
+    margin-bottom: 0px;
+}
+
+.second-subsection{
+    display: grid;
+    gap: 30px;
+}
+
+.organic-foods, .quality-standards{
+    height: 104px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 56px;
+}
+
+.quality-standards{
+    margin-top: 0px;
+}
+
+.white_rect{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.vector_plate{
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    z-index: 2;
+    left: 31px;
+    top: 27px;
+}
+
+.organic-food-text{
+    padding-top: 8px;
+    height: 100%;
+}
+
+.organic-food-text h3, .quality-standards-text h3{ 
+    width: 225px;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 140% */
+    letter-spacing: 0.36px;
+    margin-top: -8px;
+    margin-bottom: 0% ;
+}
+
+.organic-food-text p, .quality-standards-text p{ 
+    width: 552px;
+    color: #525C60;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32.4px; /* 180% */
+    letter-spacing: 0.36px;
+    padding-top: 10px;
+}
+
+.vector_box{
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    z-index: 2;
+    left: 26px;
+    top: 24px;
+} 
+
+.quality-standards-text{
+    margin-top: 14px;
+}
+
+.shop-now-button{
+    width: 199px;
+    height: 82px;
+    color: #FFF;
+    background-color: #274C5B;
+    background-image: url('./assets/arrow_to_shop_button.png');
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: 97% 40%;
+    text-indent: -41px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 21px;
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход фона */
+}
+
+.shop-now-button:hover {
+    background-color: gray; /* Цвет фона при наведении */
+}
+
+.fourth-block{
+    height: 1621px;
+    width: 100%;
+}
+
+.our-products-label{
+    width: 1380px;
+    height: 122px;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.list-of-products{
+    display: flex;
+    
 }
