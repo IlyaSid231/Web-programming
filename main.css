@@ -420,7 +420,6 @@ header {
     height: 48.3967%;
     border-radius: 1.875rem;
     background: #F9F8F8;
-
 }
 
 .rectangle-line{
@@ -496,7 +495,7 @@ header {
     position: absolute;
     width: 6.6875rem;
     height: 2.0625rem;
-    top: 32.62rem;
+    top: 32.6875rem;
     left: 9.06rem;
     color: #274C5B;
     font-family: "Open Sans";
@@ -528,9 +527,6 @@ header {
     font-size: 1.3125rem;
 }
 
-.Vegan-Red-Tomato .current-price, .organic-almonds .current-price, .brown-hazelnut .current-price{
-    top: 32.6875rem;
-}
 
 .organic-almonds .product_category{
     width: 5.25rem;
@@ -551,6 +547,145 @@ header {
     height: 100%; /* 1248px */
 }
 
-.fifth-block-text-overlay{
+.fifth-block-first-section-overlay{
     position: absolute;
+    text-align: center;
+    top: 8.12rem;
+    left: 30%;
+}
+
+.fifth-block-first-section-overlay h3{
+    color: #274C5B;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.65625rem;
+    letter-spacing: 0.0225rem;
+    text-transform: capitalize;
+}
+
+.fifth-block-second-section-overlay{
+    position: absolute;
+    width: 76.3889%;
+    height: 27.1385%;
+    top: 19.5rem;
+    left: 11.8%;
+}
+
+.fifth-block-second-section-overlay .fifth-block-woman-image{
+    position: absolute;
+    left: 30.81rem;
+}
+
+.fifth-block-five-star-image{
+    position: absolute;
+    width: 7.6875rem;
+    height: 1.6875rem;
+    margin-top: 8.31rem;
+    left: 30.56rem;
+}
+
+.fifth-block-second-section-overlay .fifth-block-quote{
+    position: absolute;
+    top: 12rem;
+    left: 4.94rem;
+    width: 58.875rem;
+    color: #525C60;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.025rem;
+    letter-spacing: 0.0225rem;
+}
+
+.fifth-block-second-section-overlay h3{
+    position: absolute;
+    top: 17.37rem;
+    left: 30.19rem;
+    color: #274C5B;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 145%;
+    letter-spacing: 0.0225rem;
+}
+
+.fifth-block-consumer{
+    position: absolute;
+    top: 19.55rem;
+    left: 32.12rem;
+    width: 4.5625rem;
+    color: #525C60;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6875rem;
+    letter-spacing: 0.0225rem;
+}
+
+.fifth-block-line{
+    position: absolute;
+    top: 46.63rem;
+    left: 14.81rem;
+    width: 67.0833%;
+    height: 0.1603%;
+    background-color: #E0E0E0;
+}
+
+.fifth-block-round-group{
+    position: absolute;
+    top: 53rem;
+    display: flex;
+    gap: 1.62rem;
+    left: 10.5rem;
+}
+
+.fifth-block .outer-round{
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 12.5rem;
+    border: 6px solid #7EB693;
+    background: #F1F1F1;
+}
+
+.fifth-block .outer-round:first-child{
+    margin-left: 0.81rem;
+}
+
+.outer-round .base-round{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 12.5rem;
+    border: 5px solid #FFF;
+}
+
+.outer-round .base-round h3{
+    margin-top: 4.5rem;
+    color: #274C5B;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.4125rem; /* 130% */
+    letter-spacing: 0.0225rem; 
+}
+
+.outer-round .base-round p{
+    color: #274C5B;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.025rem; /* 180% */
+    letter-spacing: 0.0225rem;
 }
