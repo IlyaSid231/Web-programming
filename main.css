@@ -241,15 +241,15 @@ header {
     margin-top: 130px;
 }
 
-.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i{
+.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i, .sixth-block i{
     width: 122px;
     color: #7EB693;
     font-family: Yellowtail;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 64.8px; /* 180% */
-    letter-spacing: 0.36px;
+    line-height: 4.05rem; /* 180% */
+    letter-spacing: 0.0225rem;
     text-transform: capitalize;
 }
 
@@ -361,27 +361,27 @@ header {
     margin-top: 14px;
 }
 
-.shop-now-button{
-    width: 199px;
-    height: 82px;
+.shop-now-button, .view-all-products-button{
+    width: 12.4375rem;
+    height: 5.125rem;
     color: #FFF;
     background-color: #274C5B;
     background-image: url('./assets/arrow_to_shop_button.png');
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    background-size: 3.125rem 3.125rem;
     background-position: 97% 40%;
-    text-indent: -41px;
+    text-indent: -2.5625rem;
     font-family: 'Roboto', sans-serif;
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px;
-    letter-spacing: 0.36px;
+    line-height: 2rem;
+    letter-spacing: 0.0225rem;
     text-transform: capitalize;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     border: none;
-    padding: 10px 20px;
-    margin-top: 21px;
+    padding: 0.625rem 1.25rem;
+    margin-top: 1.3125rem;
     cursor: pointer; /* Указатель при наведении */
     transition: background-color 0.3s; /* Плавный переход фона */
 }
@@ -688,4 +688,63 @@ header {
     font-weight: 700;
     line-height: 2.025rem; /* 180% */
     letter-spacing: 0.0225rem;
+}
+
+.sixth-block{
+    position: relative;
+    width: 100%;
+    height: 11.0601%;
+    background-color: #274C5B;
+}
+
+.sixth-section-label{
+    position: absolute;
+    width: 95.82%;
+    height: 16.0604%;
+    top: 8.77rem;
+    left: 1.88rem;
+}
+
+.sixth-block h3{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.65625rem;
+    letter-spacing: 0.0225rem;
+    text-transform: capitalize;
+}
+
+.sixth-block .view-all-products-button{
+    position: absolute;
+    width: 16.6875rem;
+    height: 5.125rem;
+    top: 2.76rem;
+    left: 68.94rem;
+    margin-top: 0;
+    color: #335B6B;
+    background-color: #EFD372;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    letter-spacing: 0.0225rem;
+    padding-left: 1.44rem;
+    padding-top: 0.7rem;
+    background-size: 3.4rem 2.9rem;
+    background-position: 97% 46%;
+}
+
+.sixth-block-products-list{
+    position: absolute;
+    display: flex;
+    gap: 1.25rem;
+    width: 95.9027%;
+    height: 55.6604%;
+    top: 19.37rem;
+    margin-left: 1.875rem;
+}
+
+.sixth-block-products-list .base-rectangle{
+    height: 100%;
+    width: 42.7230%;
 }
