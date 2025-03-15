@@ -4,10 +4,19 @@
     margin: 0;
 }
 
+html{
+    font-size: 16px;
+}
+
 html, body {
     height: 10447px;
     width: 1440px;
     margin: auto;
+}
+
+main{
+    width: 100%;
+    height: 91.7392%; /* 9584px */
 }
 
 header {
@@ -232,7 +241,7 @@ header {
     margin-top: 130px;
 }
 
-.third-block-text-sections .first-subsection i, .our-products-label i{
+.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i{
     width: 122px;
     color: #7EB693;
     font-family: Yellowtail;
@@ -382,18 +391,166 @@ header {
 }
 
 .fourth-block{
-    height: 1621px;
     width: 100%;
+    height: 14.4103%;
+    margin-bottom: 7.49rem;
 }
 
 .our-products-label{
-    width: 1380px;
-    height: 122px;
+    width: 95.8333%;
+    height: 8.8337%;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 7.5rem;
 }
 
 .list-of-products{
     display: flex;
-    
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    row-gap: 0;
+    width: 100%;
+    height: 88.2714%;
+    margin-top: 2.5rem;
+    margin-left: 1.875rem;
+}
+
+.base-rectangle{
+    position: relative;
+    width: 31.0417%;
+    height: 48.3967%;
+    border-radius: 1.875rem;
+    background: #F9F8F8;
+
+}
+
+.rectangle-line{
+    position: absolute;
+    bottom: 13.2966%;
+    left: 1.875rem;
+    width: 86.5011%;
+    height: 0.1695%;
+    background-color: #D4D4D4;
+}
+
+.base-rectangle .product-image{
+    position: absolute;
+    width: 86.577%;
+    height: 64.0678%;
+    top: 4.1875rem;
+    left: 1.875rem;
+}
+
+.base-rectangle .product_category{
+    position: absolute;
+    top: 1.95rem;
+    left: 1.88rem;
+    text-align: center;
+    padding-top: 0.31rem;
+    width: 26.3982%;
+    height: 6.2711%;
+    border-radius: 0.5rem;
+    background: #274C5B;
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6875rem;
+    letter-spacing: 0.0225rem;
+}
+
+.base-rectangle .product_name{
+    position: absolute;
+    width: 43.4%;
+    height: 6.101%;
+    top: 29.1rem;
+    left: 1.88rem;
+    right: 14.19rem;
+    bottom: 5.63rem;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0.0225rem;
+}
+
+.base-rectangle .price-line-through{
+    position: absolute;
+    width: 6.5625rem;
+    height: 2.0625rem;
+    top: 32.75rem;
+    left: 1.88rem;
+    text-decoration: line-through;
+    color: #B8B8B8;
+    font-family: "Open Sans";
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.025rem; 
+    letter-spacing: 0.0225rem;
+}
+
+.base-rectangle .current-price{
+    position: absolute;
+    width: 6.6875rem;
+    height: 2.0625rem;
+    top: 32.62rem;
+    left: 9.06rem;
+    color: #274C5B;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.025rem;
+    letter-spacing: 0.0225rem;
+}
+
+.base-rectangle .five-star-image{
+    position: absolute;
+    width: 5.3125rem;
+    height: 1.1875rem;
+    flex-shrink: 0;
+    top: 33.06rem;
+    left: 20.75rem;
+}
+
+.Dried-Pistachio .product_category, .brown-hazelnut .product_category{
+    width: 5.75rem;
+    height: 2.3125rem;
+    flex-shrink: 0;
+    text-align: left;
+    padding-left: 1.25rem;
+}
+
+.Vegan-Red-Tomato .product_name{
+    font-size: 1.3125rem;
+}
+
+.Vegan-Red-Tomato .current-price, .organic-almonds .current-price, .brown-hazelnut .current-price{
+    top: 32.6875rem;
+}
+
+.organic-almonds .product_category{
+    width: 5.25rem;
+    height: 2.3125rem;
+    flex-shrink: 0;
+    text-align: left;
+    padding-left: 1.25rem;
+}
+
+.fifth-block{
+    position: relative;
+    width: 100%;
+    height: 13.0217%;
+}
+
+.fifth-block-bg-image{
+    width: 100%;
+    height: 100%; /* 1248px */
+}
+
+.fifth-block-text-overlay{
+    position: absolute;
 }
