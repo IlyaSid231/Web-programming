@@ -16,7 +16,7 @@ html, body {
 
 main{
     width: 100%;
-    height: 91.7392%; /* 9584px */
+    height: 91.7392%; /* 9584px  599rem*/
 }
 
 header {
@@ -241,7 +241,7 @@ header {
     margin-top: 130px;
 }
 
-.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i, .sixth-block i{
+.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i, .sixth-block i, .seventh-block i{
     width: 122px;
     color: #7EB693;
     font-family: Yellowtail;
@@ -747,4 +747,52 @@ header {
 .sixth-block-products-list .base-rectangle{
     height: 100%;
     width: 42.7230%;
+}
+
+.seventh-block{
+    position: relative;
+    width: 100%;
+    height: 7.3456%;
+    color: #274C5B;
+    font-family: Roboto;
+    font-style: normal;
+    letter-spacing: 0.0225rem;
+    text-transform: capitalize;
+}
+
+.seventh-block-white-rectangle{
+    position: absolute;
+    right: 3.75rem;
+    top: 2.54rem;
+    width: 45rem;
+    height: 38.9375rem;
+    border-radius: 1.875rem 0rem 0rem 1.875rem;
+    background-color: #FFF;
+    padding-left: 3.75rem;
+    padding-top: 2.44rem;
+}
+
+.seventh-block h2{
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.65625rem; /* 132.955% */
+    margin-bottom: 1.85rem;
+}
+
+.seventh-block h3{
+    font-size: 1.4375rem;
+    font-weight: 700;
+    line-height: 2.0125rem;
+    margin-bottom: 0.25rem;
+}
+
+.seventh-block p{
+    color: #525C60;
+    font-family: "Open Sans";
+    width: 37.875rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 2.025rem; /* 180% */
+    margin-bottom: 0.65rem;
+    text-transform: none;
 }
