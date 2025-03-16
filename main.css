@@ -79,7 +79,7 @@ header {
 }
 
 .first-block{
-   position: relative; /* Позволяет позиционировать дочерние элементы относительно этого контейнера */
+   position: relative; 
    height: 913px;
 }
 
@@ -241,7 +241,7 @@ header {
     margin-top: 130px;
 }
 
-.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i, .sixth-block i, .seventh-block i{
+.third-block-text-sections .first-subsection i, .our-products-label i, .fifth-block i, .sixth-block i, .seventh-block i, .ninth-block i{
     width: 122px;
     color: #7EB693;
     font-family: Yellowtail;
@@ -361,12 +361,12 @@ header {
     margin-top: 14px;
 }
 
-.shop-now-button, .view-all-products-button{
+.shop-now-button, .view-all-products-button, .ninth-block-label-button, .subscribe-button{
     width: 12.4375rem;
     height: 5.125rem;
     color: #FFF;
     background-color: #274C5B;
-    background-image: url('./assets/arrow_to_shop_button.png');
+    background-image: url('./assets/arrow_to_button.png');
     background-repeat: no-repeat;
     background-size: 3.125rem 3.125rem;
     background-position: 97% 40%;
@@ -387,7 +387,7 @@ header {
 }
 
 .shop-now-button:hover {
-    background-color: gray; /* Цвет фона при наведении */
+    background-color: gray;
 }
 
 .fourth-block{
@@ -734,6 +734,10 @@ header {
     background-position: 97% 46%;
 }
 
+.view-all-products-button:hover{
+    background-color: gold;
+}
+
 .sixth-block-products-list{
     position: absolute;
     display: flex;
@@ -793,7 +797,7 @@ header {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 2.025rem; /* 180% */
-    margin-bottom: 0.65rem;
+    margin-bottom: 0.63rem;
     text-transform: none;
 }
 
@@ -839,6 +843,227 @@ header {
     width: 19.5rem;
     margin-left: 4.62rem;
     font-size: 1.5rem;
-    padding-top: 2.0rem;
+    padding-top: 1.95rem;
     padding-left: 0.2rem;
+}
+
+.ninth-block
+{
+    position: relative;
+    width: 100%;
+    height: 15.606%; /* 93.48rem */
+
+}
+
+.ninth-block-label{
+    margin-top: 8.13rem;
+    margin-left: 1.88rem;
+    height: 14.0404%;
+}
+
+.ninth-block-label h2{
+    margin-top: 0.06rem;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.65625rem; /* 130% */
+    letter-spacing: 0.0225rem;
+    text-transform: capitalize;
+}
+
+.ninth-block-label-button{
+    position: absolute;
+    top: 2.7rem;
+    right: 2.45rem;
+    background-size: 3.125rem 3.125rem;
+    background-position: 98% 45%;
+    width: 13.125rem;
+    height: 5.125rem;
+    background-color: #FFF;
+    border:0.0625rem solid #274C5B;
+    color: #274C5B;
+    font-size: 1.25rem;
+}
+
+.ninth-block-label-button:hover {
+    background-color: rgb(231, 228, 228); /* Цвет фона при наведении */
+}
+
+.ninth-block-second-section{
+    display: flex;
+    gap: 1.87rem;
+    margin-top: 2.6rem;
+    margin-left: 2.19rem;
+    width: 97.2222%;
+    height: 42.4807%;  /*  39.71094rem */
+
+}
+
+.ninth-block-first-picture, .ninth-block-second-picture{
+    position: relative;
+    width: 47.8571%;  /* 41.875rem */
+    height: 81.0545%;
+}
+
+.ninth-block-content-overlay{
+    position: absolute;
+    top: 15.62rem;
+    left: 1.88rem;
+    width: 91.0448%;
+    height: 65.4369%;
+    border-radius: 1.875rem;
+    background-color: #FFF;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.14);
+}
+
+.ninth-block-people-icon{
+    position: absolute;
+    top: 3.31rem;
+    left: 3.12rem;
+}
+
+.ninth-block-content-overlay .author-name{
+    position: absolute;
+    top: 3.4rem;
+    left: 4.88rem;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4625rem;
+    letter-spacing: 0.0225rem;
+}
+
+.ninth-block-second-picture .author-name{
+    font-size: 1.125rem;
+}
+
+.ninth-block-content-overlay h3{
+    position: absolute;
+    top: 5.59rem;
+    left: 3.13rem;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.1875rem; /* 140% */
+    letter-spacing: 0.0225rem;
+}
+
+.ninth-block .quote-text{
+    position: absolute;
+    top: 10.21rem;
+    left: 3.13rem;
+    color: #525C60;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.025rem; /* 180% */
+    letter-spacing: 0.0225rem;
+}
+
+.ninth-block .view-more-block{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    top: 15.06rem;
+    left: 3.12rem;
+    width: 35rem;
+    padding: 0.61225rem 23.875rem 0.63775rem 0rem;
+}
+
+.ninth-block .view-more-block a{
+    text-decoration: none;
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem; 
+    letter-spacing: 0.0225rem;
+}
+
+.ninth-block .view-more-block a:hover
+{
+    color: #19a5dc;
+}
+
+.ninth-block .view-more-block img{
+    width: 1.7rem;
+    height: 1.7rem;
+}
+
+.ninth-block-subscribe-our-newsletter{
+    position: relative;
+    height: 32.0924%; /* 30rem */
+    width: 100%;
+}
+
+.last-picture{
+    margin-top: 6.89rem;
+    margin-left: 1.88rem;
+}
+
+.ninth-block-subscribe-our-newsletter .content-overlay{
+    position: absolute;
+    top: 13.12rem;
+    left: 6.25rem;
+    display: flex;
+    width: 86.11%;
+    height: 25%;
+}
+
+.ninth-block-subscribe-our-newsletter .content-overlay h2{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem; /* 120% */
+    letter-spacing: 0.0225rem;
+    text-transform: capitalize;
+}
+
+.ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
+    margin-left: 21.87rem;
+    margin-top: 1.2rem;
+    margin-right: 0.63rem;
+    padding-top: 1.5rem;
+    padding-left: 1.8rem;
+    align-items: center;
+    width: 21.875rem;
+    height: 5.125rem;
+    color: #525C60;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8rem; /* 160% */
+    letter-spacing: 0.0225rem;
+    border-radius: 1rem;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+.ninth-block .subscribe-button{
+    margin-top: 1.2rem;
+    padding-left: 1.65rem;
+    padding-top: 0.4rem;
+    width: 12.3125rem;
+    font-family: "Open Sans";
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.8rem; /* 160% */
+    background-size: 3.1rem 2.6rem;
+    background-position: 95% 45%;
+}
+
+.ninth-block .subscribe-button:hover{
+    background-color: gray;
 }
