@@ -23,6 +23,7 @@ header {
 .container {
     height: 80%; 
     width: 100%;
+    max-width: 1440px;
     display: flex;
     align-items: center;
     padding-left: 1.875rem;
@@ -117,12 +118,94 @@ header .cart .cart-dark-round img{
     text-decoration: none;
 }
 
-@media (max-width: 1440px) {
+label{
+    display: none;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+@media (max-width: 1439px) {
     header .cart {
         margin-left: 8rem;
     }
     
 }
+
+@media screen and (min-width: 768px) and (max-width: 1245px){
+    
+    label{
+        display: block;
+        position: relative;
+        order: 3;
+        width: 40px;
+        height: 25px;
+        z-index: 5;
+        cursor: pointer;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 1.875rem;
+    }
+    
+    .menu-icon::after, .menu-icon::before, .menu-icon span{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition: .3s ease;
+    }
+    
+    .menu-icon::before{
+        top: 0;
+    }
+
+    .menu-icon::after{
+        bottom: 0;
+    }
+
+    .menu-icon span{
+        top: 11px;
+    }
+
+    #menu-toggle:checked ~ label::after{
+        transform: rotate(45deg);
+        bottom: 10px;
+    }
+
+    #menu-toggle:checked ~ label::before{
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    #menu-toggle:checked ~ label span{
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+
+    #menu-toggle:checked ~ body .lock{
+        overflow: hidden;
+    }
+
+    #menu-toggle:checked ~ header .cart{
+        display: flex;
+        right: 0%;
+    }
+
+    header .cart{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    header .container .contacts{
+        display: none;
+    }
+}
+
+/* Конец header ---------------------------------------- */
 
 .first-block{
     background: url('./assets/IMAGE.png') top / cover;
@@ -189,6 +272,7 @@ header .cart .cart-dark-round img{
     transition: background-color 0.3s; /* Плавный переход фона */
 }
 
+/* Конец 1 блока -------------------------------------------- */
 
 .second-block{
     max-width: 1440px;
@@ -274,7 +358,7 @@ header .cart .cart-dark-round img{
     letter-spacing: 0.36px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
     .second-block{
         flex-direction: column;
         justify-content: center;
@@ -289,6 +373,8 @@ header .cart .cart-dark-round img{
         margin-bottom: 70px;
     }
 }
+
+/* Конец 2 блока -------------------------------------------- */
 
 .third-block
 {
@@ -385,6 +471,7 @@ header .cart .cart-dark-round img{
     background-color: #FFF;
     border-radius: 20px;
     z-index: 1;
+    flex-shrink: 0;
 }
 
 .vector_plate{
@@ -468,13 +555,12 @@ header .cart .cart-dark-round img{
     background-color: gray;
 }
 
-@media (max-width: 1440px) {
-    .third_block_image{
-        
+@media (max-width: 1439px) {
+    .third-block .h2-no-br, .third-block .p-no-br{
+        display: none;
     }
 
     .third-block{
-
         gap: 15px;
     }
 
@@ -482,11 +568,44 @@ header .cart .cart-dark-round img{
         min-width: 550px;
         width: 94%;
     }
+
+    .third-block .second-subsection{
+        gap: 70px
+    }
+
+    .third-block .shop-now-button{
+        margin-top: 0%;
+    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    .third-block{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .third_block_image{
+        margin: 0;
+    }
+
+    .third-block-text-sections .first-subsection{
+        margin-top: 15px;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .third-block .second-subsection{
+        width: auto;
+        justify-items: center;
+    }
+}
+
+/* Конец 3 блока -------------------------------------------- */
+
 .fourth-block{
-    height: 1382px;
-    margin-bottom: 7.49rem;
+    min-height: 1382px;
+    margin-bottom: 7.4rem;
     max-width: 1440px;
     width: 100%;
 }
@@ -495,7 +614,8 @@ header .cart .cart-dark-round img{
     width: 95.8333%;
     height: 8.8337%;
     text-align: center;
-    margin-top: 7.5rem;
+    margin-top: 7.4rem;
+    margin-left: 1.875rem;
 }
 
 .list-of-products{
@@ -504,13 +624,10 @@ header .cart .cart-dark-round img{
     gap: 1.25rem;
     row-gap: 0;
     width: 96%;
+    min-height: 1220px;
     height: 88.2714%;
     margin-top: 2.5rem;
     margin-left: 1.875rem;
-}
-
-.list-of-products:last-child{
-    margin-right: 0%;
 }
 
 .base-rectangle{
@@ -518,7 +635,7 @@ header .cart .cart-dark-round img{
     min-width: 320px;
     width: 447px;
     height: 48.3967%;
-    min-height: 422px;
+    min-height: 590px;
     border-radius: 1.875rem;
     background: #F9F8F8;
 }
@@ -637,23 +754,36 @@ header .cart .cart-dark-round img{
     padding-left: 1.25rem;
 }
 
-.fifth-block{
-    position: relative;
-    height: 1248px;
-    width: 100%;
+@media (max-width: 1439px){
+    .list-of-products{
+        margin: 2.5rem 0 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        row-gap: 1.25rem;
+    }
 }
 
-.fifth-block-bg-image{
+/* Конец 4 блока -------------------------------------------- */
+
+.fifth-block{
+    position: relative;
+    min-height: 1248px;
     width: 100%;
-    max-width: 1440px;
-    height: 100%;
+    background: url(./assets/fifth_block_background_image.png) top / cover;
+    border-top: 1px solid transparent;
+    
 }
 
 .fifth-block-first-section-overlay{
-    position: absolute;
-    text-align: center;
-    top: 8.12rem;
-    left: 30%;
+    display: grid;
+    justify-items: center;
+    margin: 8.1rem auto 0%;
+}
+
+.fifth-block i{
+    max-width: 142px;
 }
 
 .fifth-block-first-section-overlay h3{
@@ -670,29 +800,31 @@ header .cart .cart-dark-round img{
 
 .fifth-block-second-section-overlay{
     position: absolute;
+    display: grid;
+    justify-items: center;
     width: 76.3889%;
-    height: 27.1385%;
+    /* height: 27.1385%; */
+    height: auto;
     top: 19.5rem;
     left: 11.8%;
 }
 
 .fifth-block-second-section-overlay .fifth-block-woman-image{
-    position: absolute;
+    /* position: absolute; */
     left: 30.81rem;
 }
 
 .fifth-block-five-star-image{
-    position: absolute;
+    /* position: absolute; */
     width: 7.6875rem;
     height: 1.6875rem;
-    margin-top: 8.31rem;
+    margin-top: 1.1rem;
     left: 30.56rem;
 }
 
 .fifth-block-second-section-overlay .fifth-block-quote{
-    position: absolute;
-    top: 11.9rem;
-    left: 4.94rem;
+    /* position: absolute; */
+    margin-top: 2rem;
     max-width: 58.875rem;
     color: #525C60;
     text-align: center;
@@ -705,9 +837,8 @@ header .cart .cart-dark-round img{
 }
 
 .fifth-block-second-section-overlay h3{
-    position: absolute;
-    top: 17.2rem;
-    left: 30.19rem;
+    /* position: absolute; */
+    margin-top: 1.2rem;
     color: #274C5B;
     text-align: center;
     font-family: Roboto;
@@ -719,9 +850,8 @@ header .cart .cart-dark-round img{
 }
 
 .fifth-block-consumer{
-    position: absolute;
-    top: 19.5rem;
-    left: 32.12rem;
+    /* position: absolute; */
+    margin-top: -0.1rem;
     width: 4.5625rem;
     color: #525C60;
     text-align: center;
@@ -743,13 +873,11 @@ header .cart .cart-dark-round img{
 }
 
 .fifth-block-round-group{
-    width: auto;
-    position: absolute;
-    top: 53rem;
+    max-width: 1104px;
     display: flex;
     flex-wrap: wrap;
     gap: 1.62rem;
-    left: 10.5rem;
+    margin: 37.2rem auto 0;
 }
 
 .fifth-block .outer-round{
@@ -794,11 +922,35 @@ header .cart .cart-dark-round img{
     letter-spacing: 0.0225rem;
 }
 
+@media (max-width: 1439px){
+    .fifth-block .p-no-br{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1280px){
+    .fifth-block-round-group{
+        justify-content: center;
+    }
+
+    .fifth-block{
+        padding-bottom: 1.875rem;
+    }
+
+    .fifth-block-line{
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+/* Конец 5 блока -------------------------------------------- */
+
 .sixth-block{
+    border-top: 1px solid transparent;
     max-width: 1440px;
     width: 100%;
     position: relative;
-    height: 1060px;
+    min-height: 1060px;
+    height: auto;
     background-color: #274C5B;
 }
 
@@ -844,19 +996,33 @@ header .cart .cart-dark-round img{
 }
 
 .sixth-block-products-list{
-    position: absolute;
+    max-width: 1400px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.25rem;
     height: 55.6604%;
-    top: 19.37rem;
-    margin-left: 1.875rem;
+    margin: 19.37rem auto 0;
 }
 
 .sixth-block-products-list .base-rectangle{
     height: 100%;
-    width: 447px;
 }
+
+@media (max-width: 1439px){
+    .sixth-block .view-all-products-button {
+        left: 79%;
+        top: 2rem;
+    }
+    .sixth-block-products-list:last-child{
+        padding-bottom: 10rem;
+    }
+    .sixth-block .view-all-products-button{
+        top: 2.8rem
+    }
+}
+
+/* Конец шестого блока --------------------------------------------*/
 
 .seventh-block{
     position: relative;
@@ -905,12 +1071,17 @@ header .cart .cart-dark-round img{
     text-transform: none;
 }
 
+/* Конец 7 блока --------------------------------------------*/
+
+
 .eighth-block{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding-top: 8.75rem;
     gap: 1.87rem;
-    height: 860px;
+    min-height: 860px;
+    height: auto;
     background-color: #EFF6F1;
 }
 
@@ -954,17 +1125,32 @@ header .cart .cart-dark-round img{
     padding-left: 0.2rem;
 }
 
+@media (max-width: 1439px){
+    .eighth-block{
+        padding-bottom: 8.75rem;
+    }
+}
+
+/* Конец 8 блока --------------------------------------------*/
+
 .ninth-block
 {
     position: relative;
     width: 100%;
-    height: 1485px; /* 93.48rem */
+    min-height: 1485px; /* 93.48rem */
+    height: auto;
     padding-top: 8.13rem;
+}
+
+.ninth-block-label h2 br{
+    display: none;
 }
 
 .ninth-block-label{
     margin-left: 1.88rem;
-    height: 14.0404%;
+    /* min-height: 14.0404%; */
+    min-height: 190px;
+    height: auto;
 }
 
 .ninth-block-label h2{
@@ -1001,10 +1187,13 @@ header .cart .cart-dark-round img{
     display: flex;
     flex-wrap: wrap;
     gap: 1.87rem;
-    margin-top: 3.78rem;
-    margin-left: 2.19rem;
+    margin-top: 3.8rem;
+    margin-left: 1.25rem;
     width: 97.2222%;
-    height: 36.6875rem;  /*  39.71094rem or 36.6875 */
+    min-height: 36.6875rem;
+    height: auto; 
+    justify-content: center;
+    row-gap: 7rem;
 }
 
 .ninth-block-first-picture, .ninth-block-second-picture{
@@ -1106,28 +1295,29 @@ header .cart .cart-dark-round img{
 }
 
 .ninth-block-subscribe-our-newsletter{
-    margin-top: 2.95rem;
-    position: relative;
-    height: 32.0924%; /* 30rem */
-    width: 100%;
-}
-
-.last-picture{
-    width: 95.83%;
-    margin-top: 6.89rem;
+    border-top: 1px solid transparent;
+    /* height: 32.0924%; 30rem */
+    min-height: 320px;
+    max-width: 1380px;
+    border-radius: 30px;
+    background-image: url(./assets/last_picture.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 9.84rem;
     margin-left: 1.88rem;
+    margin-right: 1.88rem;
 }
 
 .ninth-block-subscribe-our-newsletter .content-overlay{
-    position: absolute;
-    top: 13.12rem;
-    left: 6.25rem;
     display: flex;
-    width: 86.11%;
+    width: 89.855%;
     height: 25%;
+    margin: 6.3rem 4.4rem 0;
 }
 
 .ninth-block-subscribe-our-newsletter .content-overlay h2{
+    min-width: 325px;
     color: #FFF;
     font-family: Roboto;
     font-size: 3.125rem;
@@ -1175,6 +1365,26 @@ header .cart .cart-dark-round img{
 .ninth-block .subscribe-button:hover{
     background-color: gray;
 }
+
+@media (max-width: 1439px){
+    .ninth-block-label h2 br{
+        display: block;
+    }
+
+    .ninth-block-label{
+        padding-bottom: 3.625rem;
+    }
+
+    .ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
+        margin-left: auto;
+    }
+
+    .ninth-block{
+        margin-bottom: 4.3rem;
+    }
+}
+
+/* Конец 9 (последнего) блока --------------------------------------------*/
 
 footer{
     width: 100%;
@@ -1257,6 +1467,7 @@ footer .contacts-second-column p{
 }
 
 .contacts-second-column .icon-group{
+    max-width: 558px;
     display: flex;
     gap: 1.25rem;
     margin-left: 8.15rem;
@@ -1312,4 +1523,52 @@ footer .contacts .contacts-third-column p{
     font-weight: 400;
     line-height: 2.025rem; /* 180% */
     letter-spacing: 0.0225rem;
+}
+
+@media (max-width: 1439px){
+    .first-vertical-line{
+        display: none;
+    }
+
+    footer .contacts{
+        padding-left: 0;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contacts-second-column .icon-group{
+        justify-content: center;
+        margin: 0%;
+    }
+
+
+    .contacts-second-column{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        order: 1;
+        width: 100%;
+        margin-bottom: 3rem;        
+    }
+
+    .contacts-first-column h2, .contacts-first-column p, .contacts-first-column h3{
+        text-align: center;
+    }
+    .contacts-first-column{
+        max-width: 270px;
+        order: 2;
+        /* margin-left: auto;  */
+        margin: auto;
+    }
+    .second-vertical-line{
+        order: 3;
+    }
+    footer .contacts .contacts-third-column{
+        order: 4;
+        max-width: 335px;
+        text-align: center;
+        /* margin-right: auto; */
+        margin: auto;
+    }
 }

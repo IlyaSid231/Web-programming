@@ -9,13 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
 </head>
-<body>
+<body class="lock">
     <header>
         <div class="container">
             <span class="logo">
                 <img src="./assets/organik_logo.png" alt="image-preview">
             </span>
-            <div class="contacts">
+            <input type="checkbox" id="menu-toggle">
+            <label class="menu-icon active-burger-menu" for="menu-toggle">
+                <span></span>
+            </label>
+             <div class="contacts active-burger-menu">
                 <nav>
                     <a href="#" class="contacts-home-button">Home</a>
                     <a href="#">About Us</a>
@@ -26,15 +30,15 @@
             </div>
             <span class="cart">
                 <div class="cart-dark-round">
-                    <img src="./assets/cort_button_image.png" alt="cort_button_image">
+                     <img src="./assets/cort_button_image.png" alt="cort_button_image">
                 </div>
-                <a href="#">Cart  0</a>
+                 <a href="#">Cart  0</a>
             </span>
         </div>
     </header>
     <main>
         <section class="first-block" >
-            <!-- <img src="./assets/IMAGE.png" class="first-block-bg-image" alt="first_image"> -->
+            
             <div class="text-overlay">
                 <i>Made with Nature</i>
                 <h1><b>Welcome to the <br> world of nature <br> and organic.</b></h1>
@@ -62,10 +66,10 @@
             <div class="third-block-text-sections">
                 <div class="first-subsection">
                     <i>About us</i>
-                    <h1 class="base-middle-lable">We believe In Organic <br> Foods For Strong Health</h1>
-                    <h2>Welcome to the world of natural and organic. Here you can discover the <br>
-                        bounty of nature. We have grown on the principles of health, and care. We <br>
-                        aim to give our customers a healthy chemical-free meal for perfect nutrition.</h2>
+                    <h1 class="base-middle-lable">We believe In Organic <br class="h1-no-br"> Foods For Strong Health</h1>
+                    <h2>Welcome to the world of natural and organic. Here you can discover the <br class="h2-no-br">
+                        bounty of nature. We have grown on the principles of health, and care. We <br class="h2-no-br">
+                        aim to give our customers a healthy chemical-free meal for perfect nutrition.</h2 class="h2-no-br">
                 </div>
                 <div class="second-subsection">
                     <section class="organic-foods">
@@ -74,7 +78,7 @@
                         </div>
                         <div class="organic-food-text">
                             <h3>Organic Foods Only</h3>
-                            <p>The Product that you ordered will be verified that we have or<br>
+                            <p>The Product that you ordered will be verified that we have or<br class="p-no-br">
                                  not if have we will start to move on with the next step.</p>
                         </div>
                     </section>
@@ -84,7 +88,7 @@
                         </div>
                         <div class="quality-standards-text">
                             <h3>Quality Standards</h3>
-                            <p>Once your product is packed it will be delivered to your <br>
+                            <p>Once your product is packed it will be delivered to your <br class="p-no-br">
                             nearby locality you can directly visit the to buy the product.</p>
                         </div>
                     </section>
@@ -155,7 +159,6 @@
             </section>
         </section>
         <section class="fifth-block">
-            <img src="./assets/fifth_block_background_image.png" class="fifth-block-bg-image" alt="fifth_block_background_image">
             <section class="fifth-block-first-section-overlay">
                 <i>Testimonial</i>
                 <h3>What Our Customer Saying?</h3>
@@ -163,7 +166,7 @@
             <section class="fifth-block-second-section-overlay">
                 <img src="./assets/woman_image.png" class="fifth-block-woman-image" alt="woman_image">
                 <img src="./assets/five_star_2.png" class="fifth-block-five-star-image" alt="five_star_image">
-                <p class="fifth-block-quote">The quality of organic produce is extremely high, the service is second to none and the taste of the food<br>
+                <p class="fifth-block-quote">The quality of organic produce is extremely high, the service is second to none and the taste of the food<br class="p-no-br">
                     takes me back to my childhood when we were growing our own.</p>
                 <h3>Sara Taylor</h3>
                 <p class="fifth-block-consumer">Consumer</p>
@@ -265,7 +268,7 @@
         <section class="ninth-block">
             <div class="ninth-block-label">
                 <i>News</i>
-                <h2>Discover The recent content about organic products</h2>
+                <h2>Discover The recent content about organic <br class="enable-br-h2"> products</h2>
                 <button class="ninth-block-label-button">More News</button>
             </div>
             <section class="ninth-block-second-section">
@@ -297,7 +300,6 @@
                 </div>
             </section>
             <section class="ninth-block-subscribe-our-newsletter">
-                <img src="./assets/last_picture.png" class="last-picture" alt="subscribe_our_newsletter_picture">
                 <div class="content-overlay">
                     <h2>Subscribe our <br> Newsletter</h2>
                     <p>Enter your email address</p>
@@ -317,7 +319,7 @@
                 <h3>Address</h3>
                 <p>88 Road, Brooklyn Street, USA</p>
             </div>
-            <div class="vertical-line"></div>
+            <div class="vertical-line first-vertical-line"></div>
             <div class="contacts-second-column">
                 <img src="./assets/organik_logo.png" class="organic_logo" alt="organik_logo">
                 <p>We are a popular and farming company aspiring to be a leader <br> in the Organic food industry.</p>
@@ -336,7 +338,7 @@
                     </div>
                 </div>
             </div>
-            <div class="vertical-line"></div>
+            <div class="vertical-line second-vertical-line"></div>
             <div class="contacts-third-column">
                 <h2>Utility Pages</h2>
                 <p>Style Guide</p>
