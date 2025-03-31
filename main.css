@@ -955,11 +955,13 @@ label{
 }
 
 .sixth-section-label{
-    position: absolute;
+    display: flex;
+    position: relative;
     width: 95.82%;
+    max-width: 1380px;
     height: 16.0604%;
-    top: 8.77rem;
-    left: 1.88rem;
+    margin-top: 8.77rem;
+    margin-left: 1.88rem;
 }
 
 .sixth-block h3{
@@ -974,12 +976,10 @@ label{
 }
 
 .sixth-block .view-all-products-button{
-    position: absolute;
+    margin-left: 36.375rem;
+    margin-top: 2.7rem;
     width: 16.6875rem;
     height: 5.125rem;
-    top: 25.9398%;
-    left: 79.942%;
-    margin-top: 0;
     color: #335B6B;
     background-color: #EFD372;
     font-size: 1.25rem;
@@ -1002,31 +1002,56 @@ label{
     justify-content: center;
     gap: 1.25rem;
     height: 55.6604%;
-    margin: 19.37rem auto 0;
+    margin: 2.8rem auto 0;
 }
 
 .sixth-block-products-list .base-rectangle{
     height: 100%;
 }
 
+.sixth-block .no-br{
+    display: none;
+}
+
 @media (max-width: 1439px){
     .sixth-block .view-all-products-button {
-        left: 79%;
-        top: 2rem;
+        margin-left: auto;
     }
     .sixth-block-products-list:last-child{
         padding-bottom: 10rem;
-    }
+    } 
+}
+
+@media screen and (min-width: 880px) and (max-width: 1280px){
+    
     .sixth-block .view-all-products-button{
-        top: 2.8rem
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 880px){
+    
+    .sixth-block .view-all-products-button{
+        margin-right: 1rem;
+    }
+    .sixth-section-label{
+        margin-left: 1.5rem;
+    }
+    .sixth-section-label-text .no-br{
+        display: block;
     }
 }
 
 /* Конец шестого блока --------------------------------------------*/
 
 .seventh-block{
+    background: url(./assets/eco_image.png);
+    background-position: left;
+    background-repeat: no-repeat;
     position: relative;
     height: 704px;
+    width: 100%;
+    max-width: 1440px;
     color: #274C5B;
     font-family: Roboto;
     font-style: normal;
@@ -1069,6 +1094,23 @@ label{
     line-height: 2.025rem; /* 180% */
     margin-bottom: 0.63rem;
     text-transform: none;
+}
+
+@media (max-width: 1280px) {
+    .seventh-block-white-rectangle{
+    right: 0%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .seventh-block{
+        background-size: cover;
+    }
+    .seventh-block-white-rectangle{
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 1.875rem;
+    }
 }
 
 /* Конец 7 блока --------------------------------------------*/
@@ -1147,8 +1189,8 @@ label{
 }
 
 .ninth-block-label{
+    display: flex;
     margin-left: 1.88rem;
-    /* min-height: 14.0404%; */
     min-height: 190px;
     height: auto;
 }
@@ -1166,9 +1208,8 @@ label{
 }
 
 .ninth-block-label-button{
-    position: absolute;
-    top: 10.83rem;
-    right: 2.45rem;
+    margin-top: 4rem;
+    margin-left: 3.8rem;
     background-size: 3.125rem 3.125rem;
     background-position: 98% 45%;
     width: 13.125rem;
@@ -1296,7 +1337,6 @@ label{
 
 .ninth-block-subscribe-our-newsletter{
     border-top: 1px solid transparent;
-    /* height: 32.0924%; 30rem */
     min-height: 320px;
     max-width: 1380px;
     border-radius: 30px;
@@ -1311,6 +1351,7 @@ label{
 
 .ninth-block-subscribe-our-newsletter .content-overlay{
     display: flex;
+    flex-wrap: wrap;
     width: 89.855%;
     height: 25%;
     margin: 6.3rem 4.4rem 0;
@@ -1367,22 +1408,69 @@ label{
 }
 
 @media (max-width: 1439px){
-    .ninth-block-label h2 br{
-        display: block;
+
+    .ninth-block-label-text{
+        max-width: 1100px;
+    }
+
+    .ninth-block-label > :nth-child(2){
+        min-width: 210px;
+    }
+
+    .ninth-block-label h2{
+        padding-right: 20px;
     }
 
     .ninth-block-label{
         padding-bottom: 3.625rem;
+        align-items: center;
     }
 
     .ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
         margin-left: auto;
     }
-
-    .ninth-block{
-        margin-bottom: 4.3rem;
+    .ninth-block-label-button{
+        margin-right: 20px;
+        margin-top: 0;
     }
+
 }
+
+@media screen and (min-width: 768px) and (max-width: 1100px){
+
+    .ninth-block-subscribe-our-newsletter .no-br
+    {
+        display: none;
+    }
+    
+    .ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
+        margin: 0;
+    }
+
+    .ninth-block-subscribe-our-newsletter .content-overlay h2{
+        padding-right: 20px;
+    }
+    
+    .ninth-block-subscribe-our-newsletter .content-overlay{
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin: 0%;
+        margin-left: 50%;
+        transform: translate(-50%);
+        margin-top: 50px;
+    
+    }
+    .ninth-block-subscribe-our-newsletter .content-overlay:last-child{
+        padding-bottom: 50px;
+    }
+    
+    .ninth-block .subscribe-button{
+        margin: 0%;
+    }
+    
+}
+
 
 /* Конец 9 (последнего) блока --------------------------------------------*/
 
@@ -1513,6 +1601,7 @@ footer .contacts .contacts-third-column p{
 }
 
 .copyright p{
+    min-width: 637px;
     white-space: pre;
     padding-left: 28.5889%;
     color: #525C60;
@@ -1570,5 +1659,11 @@ footer .contacts .contacts-third-column p{
         text-align: center;
         /* margin-right: auto; */
         margin: auto;
+    }
+
+    .copyright p{
+        padding: 0;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 }
