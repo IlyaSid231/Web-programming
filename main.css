@@ -133,7 +133,7 @@ label{
     
 }
 
-@media screen and (min-width: 768px) and (max-width: 1245px){
+@media screen and (min-width: 320px) and (max-width: 1245px){
     
     label{
         display: block;
@@ -199,9 +199,12 @@ label{
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px){
+@media screen and (min-width: 320px) and (max-width: 1000px){
     header .container .contacts{
         display: none;
+    }
+    header .container{
+        padding-left: 15px;
     }
 }
 
@@ -272,6 +275,18 @@ label{
     transition: background-color 0.3s; /* Плавный переход фона */
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .first-block .text-overlay h1{
+        width: 100%;
+        height: auto;
+        font-size: 3rem;
+        line-height: normal;
+    }
+    .first-block .text-overlay h1 .no-br{
+        display: none;
+    }
+}
+
 /* Конец 1 блока -------------------------------------------- */
 
 .second-block{
@@ -285,11 +300,12 @@ label{
 }
 
 .second-block .second-block-first-picture{
+    background-image: url(./assets/natural_image.png);
+    background-size: cover;
     position: relative;
     width: 665px;
     height: 378px;
     flex-shrink: 0;
-    /* margin-right: 50px; */
     margin-top: 140px;
 }
 
@@ -323,6 +339,7 @@ label{
 
 
 .second-block .second-block-second-picture{
+    background-image: url(./assets/other_image.png);
     position: relative;
     width: 665px;
     height: 378px;
@@ -371,6 +388,55 @@ label{
     .second-block .second-block-second-picture{
         margin-top: 0%;
         margin-bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .second-block{
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+        height: auto;
+    }
+    
+    .second-block .second-block-first-picture{
+        margin-top: 35px;
+    }
+    .second-block .second-block-second-picture{
+        margin-top: 0%;
+        margin-bottom: 35px;
+    }
+
+    .second-block .no-br{
+        display: none;
+    }
+
+    .second-block .second-block-first-picture, .second-block .second-block-second-picture{
+        width: 300px;
+        margin-right: 10px;
+        margin-left: 10px;
+        height: auto;
+        min-height: 180px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .second-block-first-picture .second-block-text-overlay, .second-block-second-picture .second-block-text-overlay{
+        width: auto;
+        top: 15px; 
+        left: 20px;
+    }
+    
+    .second-block-first-picture .second-block-text-overlay h1, .second-block-second-picture .second-block-text-overlay h1{
+        line-height: 2.5rem;
+        font-size: 2rem;
+        margin-top: -5px;
+    }
+    .second-block-first-picture .second-block-text-overlay i, .second-block-second-picture .second-block-text-overlay i{
+        font-size: 1.75rem;
     }
 }
 
@@ -601,6 +667,47 @@ label{
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .third_block_image{
+        max-width: 320px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .third-block{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-bottom: 3rem;
+    }
+
+    .third-block-text-sections{
+        min-width: auto;
+        width: auto;
+    }
+
+    .third-block-text-sections .first-subsection i{
+        max-width: none;
+        text-align: center;
+    }
+
+    .third-block-text-sections .first-subsection{
+        text-align: center;
+        padding: 0 10px 0 10px;
+        margin-top: 10px;
+    }
+
+    .third-block .second-subsection{
+        width: 100%;
+        justify-items: center;
+        padding: 0 10px 0 10px;
+    }
+
+    .second-subsection .organic-foods, .second-subsection .quality-standards{
+        height: auto;
+        align-items: normal;
+    }
+}
+
 /* Конец 3 блока -------------------------------------------- */
 
 .fourth-block{
@@ -765,6 +872,55 @@ label{
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .our-products-label{
+        margin-left: 0;
+    }
+    .list-of-products .product-image{
+        height: auto;
+    }
+    .base-rectangle{
+        min-width: auto;
+        max-width: 300px;
+        min-height: auto;
+        height: 420px;
+    }
+    .base-rectangle .product_category{
+        padding-top: 0;
+        font-size: 0.75rem;
+    }
+
+    .base-rectangle .product_name{
+        font-size: 1.2rem;
+        width: 195px;
+        top: 20.5rem;
+    }
+
+    .rectangle-line{
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .base-rectangle .price-line-through{
+        top: 22.75rem;
+    }
+
+    .base-rectangle .current-price{
+        top: 22.75rem;
+        font-size: 1.1rem;
+    }
+
+    .base-rectangle .five-star-image{
+        top: 2rem;
+        left: 12rem;
+    }
+
+    .Dried-Pistachio .product_category, .brown-hazelnut .product_category, .organic-almonds .product_category{
+        width: 26.3982%;
+        height: 6.2711%
+    }
+}
+
 /* Конец 4 блока -------------------------------------------- */
 
 .fifth-block{
@@ -783,7 +939,7 @@ label{
 }
 
 .fifth-block i{
-    max-width: 142px;
+    max-width: 150px;
 }
 
 .fifth-block-first-section-overlay h3{
@@ -799,31 +955,21 @@ label{
 }
 
 .fifth-block-second-section-overlay{
-    position: absolute;
     display: grid;
     justify-items: center;
     width: 76.3889%;
-    /* height: 27.1385%; */
     height: auto;
-    top: 19.5rem;
-    left: 11.8%;
-}
-
-.fifth-block-second-section-overlay .fifth-block-woman-image{
-    /* position: absolute; */
-    left: 30.81rem;
+    margin-top: 3.67rem;
+    margin-left: 11.8%;
 }
 
 .fifth-block-five-star-image{
-    /* position: absolute; */
     width: 7.6875rem;
     height: 1.6875rem;
     margin-top: 1.1rem;
-    left: 30.56rem;
 }
 
 .fifth-block-second-section-overlay .fifth-block-quote{
-    /* position: absolute; */
     margin-top: 2rem;
     max-width: 58.875rem;
     color: #525C60;
@@ -837,7 +983,6 @@ label{
 }
 
 .fifth-block-second-section-overlay h3{
-    /* position: absolute; */
     margin-top: 1.2rem;
     color: #274C5B;
     text-align: center;
@@ -850,7 +995,6 @@ label{
 }
 
 .fifth-block-consumer{
-    /* position: absolute; */
     margin-top: -0.1rem;
     width: 4.5625rem;
     color: #525C60;
@@ -864,11 +1008,11 @@ label{
 }
 
 .fifth-block-line{
-    position: absolute;
-    top: 46.63rem;
-    left: 14.81rem;
+    /* position: absolute; */
+    margin-top: 6.1rem;
+    margin-left: 14.81rem;
     width: 67.0833%;
-    height: 0.1603%;
+    height: 2px;
     background-color: #E0E0E0;
 }
 
@@ -877,7 +1021,7 @@ label{
     display: flex;
     flex-wrap: wrap;
     gap: 1.62rem;
-    margin: 37.2rem auto 0;
+    margin: 6.2rem auto 0;
 }
 
 .fifth-block .outer-round{
@@ -938,7 +1082,14 @@ label{
     }
 
     .fifth-block-line{
-        left: 50%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .fifth-block-first-section-overlay h3{
+        padding: 0 10px 0 10px;
+    }
+    .fifth-block-second-section-overlay{
+        margin-left: 50%;
         transform: translate(-50%);
     }
 }
@@ -1005,10 +1156,6 @@ label{
     margin: 2.8rem auto 0;
 }
 
-.sixth-block-products-list .base-rectangle{
-    height: 100%;
-}
-
 .sixth-block .no-br{
     display: none;
 }
@@ -1042,12 +1189,33 @@ label{
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px){
+    
+    .sixth-section-label{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 50%;
+        transform: translate(-50%);
+        padding: 0 10px 0 10px;
+    }
+    .sixth-block .view-all-products-button{
+        margin-left: 0;
+    }
+
+    .sixth-block-products-list{
+        padding: 0 10px 0 10px;
+    }
+
+}
+
 /* Конец шестого блока --------------------------------------------*/
 
 .seventh-block{
     background: url(./assets/eco_image.png);
     background-position: left;
     background-repeat: no-repeat;
+    border-top: 1px solid transparent;
     position: relative;
     height: 704px;
     width: 100%;
@@ -1060,11 +1228,12 @@ label{
 }
 
 .seventh-block-white-rectangle{
-    position: absolute;
-    right: 3.75rem;
-    top: 2.54rem;
+    margin-right: 3.7rem;
+    margin-left: auto;
+    margin-top: 2.54rem;
     width: 45rem;
-    height: 38.9375rem;
+    min-height: 38.9375rem;
+    height: auto;
     border-radius: 1.875rem 0rem 0rem 1.875rem;
     background-color: #FFF;
     padding-left: 3.75rem;
@@ -1088,7 +1257,8 @@ label{
 .seventh-block p{
     color: #525C60;
     font-family: "Open Sans";
-    width: 37.875rem;
+    /* width: 37.875rem; */
+    width: auto;
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 2.025rem; /* 180% */
@@ -1096,10 +1266,9 @@ label{
     text-transform: none;
 }
 
-@media (max-width: 1280px) {
-    .seventh-block-white-rectangle{
-    right: 0%;
-    }
+.seventh-block i{
+    max-width: none;
+    width: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
@@ -1107,9 +1276,38 @@ label{
         background-size: cover;
     }
     .seventh-block-white-rectangle{
-        left: 50%;
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 50%;
         transform: translate(-50%);
         border-radius: 1.875rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .seventh-block {
+        background-size: cover;
+        height: auto;
+        padding-bottom: 2.54rem;
+    }
+
+    .seventh-block-white-rectangle{
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        width: 93.75%;
+        margin-left: 50%;
+        transform: translate(-50%);
+        padding: 2.44rem 10px 2.44rem 10px;
+        border-radius: 1.875rem;
+    }
+
+    .seventh-block h2{
+        font-size: 2.5rem;
     }
 }
 
@@ -1120,12 +1318,33 @@ label{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 8.75rem;
+    padding-top: 8.95rem;
     gap: 1.87rem;
     min-height: 860px;
     height: auto;
     background-color: #EFF6F1;
 }
+
+.eighth-block-fruit-juice{
+    background-image: url(./assets/fruit_juice.png);
+}
+
+.eighth-block-nuts-cookies{
+    background-image: url(./assets/nuts-cookies.png);
+}
+
+.eighth-block-organic-food{
+    background-image: url(./assets/organic_food.png);
+}
+
+.eighth-block-fruit-juice, .eighth-block-nuts-cookies, .eighth-block-organic-food{
+    width: 460px;
+    height: 580px;
+    flex-shrink: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .eighth-block p{
     position: absolute;
@@ -1170,6 +1389,27 @@ label{
 @media (max-width: 1439px){
     .eighth-block{
         padding-bottom: 8.75rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .eighth-block{
+        width: 100%;
+    }
+
+    .eighth-block-fruit-juice, .eighth-block-nuts-cookies, .eighth-block-organic-food{
+        min-width: 320px;
+        max-width: 460px;
+        width: 100%;
+    }
+
+    .eighth-block p{
+        
+        margin: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -1228,7 +1468,7 @@ label{
     display: flex;
     flex-wrap: wrap;
     gap: 1.87rem;
-    margin-top: 3.8rem;
+    margin-top: 3.9rem;
     margin-left: 1.25rem;
     width: 97.2222%;
     min-height: 36.6875rem;
@@ -1238,9 +1478,18 @@ label{
 }
 
 .ninth-block-first-picture, .ninth-block-second-picture{
+    background-image: url(./assets/sorrel_image.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
-    max-width: 670px; /*47.8571%; 41.875rem */
-    height: 87.7342%;
+    width: 670px;
+    height: 515px;
+    border-radius: 30px;
+}
+
+.ninth-block-second-picture{
+    background-image: url(./assets/tomato_image.png);
 }
 
 .ninth-block-content-overlay{
@@ -1436,7 +1685,7 @@ label{
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px){
+@media screen and (min-width: 320px) and (max-width: 1100px){
 
     .ninth-block-subscribe-our-newsletter .no-br
     {
@@ -1448,13 +1697,15 @@ label{
     }
 
     .ninth-block-subscribe-our-newsletter .content-overlay h2{
-        padding-right: 20px;
+        text-align: center;
     }
     
     .ninth-block-subscribe-our-newsletter .content-overlay{
+        width: auto;
         flex-direction: column;
         gap: 30px;
         align-items: center;
+        justify-content: center;
         margin: 0%;
         margin-left: 50%;
         transform: translate(-50%);
@@ -1471,6 +1722,113 @@ label{
     
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .ninth-block-label{
+        flex-direction: column;
+        gap: 2.7rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .ninth-block-label h2{
+        padding-left: 20px;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .ninth-block-label-button{
+        margin: 0;
+    }
+
+    .ninth-block-second-section{
+        margin-left: 50%;
+        transform: translate(-50%);
+        
+    }
+
+    .ninth-block-first-picture, .ninth-block-second-picture{
+        min-width: 300px;
+        max-width: 670px;
+        min-height: 515px;
+        width: 100%;
+    }
+
+    .ninth-block-content-overlay{
+        min-height: 337px;
+        top: 48.5436%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .ninth-block-second-section .no-br{
+        display: none;
+    }
+
+    .ninth-block .ninth-block-people-icon{
+        width: auto;
+        top: 15.727%;
+        left: 8.1967%;
+    }
+
+    .ninth-block-content-overlay .author-name{
+        top: 16%;
+        left: 17%;
+    }
+
+    .ninth-block-content-overlay h3{
+        top: 26.4094%;
+        left: 8.1967%;
+        font-size: 1.3125rem;
+        line-height: 2rem;
+        padding-right: 20px;
+    }
+    
+    .ninth-block .quote-text{
+        left: 8.1967%;
+        top: 55%;
+        padding-right: 20px;
+    }
+
+    .ninth-block .view-more-block{
+        padding: 0;
+        width: auto;
+        top: 85%;
+        left: 8.1967%;
+    }
+
+    .ninth-block-second-picture .ninth-block-content-overlay h3{
+        padding-right: 20px;
+    }
+
+    .ninth-block .view-more-block a{
+        font-size: 1.125rem;
+    }
+
+    .ninth-block-subscribe-our-newsletter .content-overlay{
+        margin-left: 0;
+        transform: none;
+    }
+
+    .ninth-block-subscribe-our-newsletter .content-overlay h2{
+        min-width: auto;
+        font-size: 2.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
+        max-width: 350px;
+       width: calc(100% - 20px);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 350px)
+{
+    .ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
+        padding-left: 0.8rem;
+    }
+}
 
 /* Конец 9 (последнего) блока --------------------------------------------*/
 
@@ -1621,8 +1979,8 @@ footer .contacts .contacts-third-column p{
 
     footer .contacts{
         padding-left: 0;
-        flex-direction: row;
         align-items: center;
+        width: 100%;
     }
 
     .contacts-second-column .icon-group{
@@ -1647,17 +2005,17 @@ footer .contacts .contacts-third-column p{
     .contacts-first-column{
         max-width: 270px;
         order: 2;
-        /* margin-left: auto;  */
         margin: auto;
     }
+
     .second-vertical-line{
         order: 3;
     }
+    
     footer .contacts .contacts-third-column{
         order: 4;
         max-width: 335px;
         text-align: center;
-        /* margin-right: auto; */
         margin: auto;
     }
 
@@ -1665,5 +2023,33 @@ footer .contacts .contacts-third-column p{
         padding: 0;
         margin-left: 50%;
         transform: translate(-50%);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 660px)
+{
+    footer .contacts-first-column{
+        max-width: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .second-vertical-line{
+        display: none;
+    }
+
+    footer .contacts p{
+        width: auto;
+    }
+
+    .copyright p{
+        min-width: auto;
+        width: auto;
+        margin: 0;
+        transform: none;
+        text-align: center;
+        height: auto;
+        white-space: normal;
+        padding: 0 10px 0 10px;
     }
 }
