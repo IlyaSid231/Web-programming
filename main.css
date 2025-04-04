@@ -1719,10 +1719,14 @@ label{
     .ninth-block .subscribe-button{
         margin: 0%;
     }
+
+    .ninth-block-second-section{
+        margin: 3.9rem auto 0 auto;
+    }
     
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 767px){
     .ninth-block-label{
         flex-direction: column;
         gap: 2.7rem;
@@ -1751,7 +1755,7 @@ label{
         min-width: 300px;
         max-width: 670px;
         min-height: 515px;
-        width: 100%;
+        width: calc(100% - 20px);
     }
 
     .ninth-block-content-overlay{
@@ -1821,14 +1825,17 @@ label{
         max-width: 350px;
        width: calc(100% - 20px);
     }
-}
 
-@media screen and (min-width: 320px) and (max-width: 350px)
-{
-    .ninth-block-subscribe-our-newsletter .content-overlay > :nth-child(2){
-        padding-left: 0.8rem;
+    .ninth-block-subscribe-our-newsletter{
+        min-width: 300px;
+        max-width: 670px;
+        width: calc(100% - 20px);
+        margin-right: 0;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 }
+
 
 /* Конец 9 (последнего) блока --------------------------------------------*/
 
@@ -1973,6 +1980,11 @@ footer .contacts .contacts-third-column p{
 }
 
 @media (max-width: 1439px){
+
+    footer{
+        margin-top: 0;
+    }
+
     .first-vertical-line{
         display: none;
     }
